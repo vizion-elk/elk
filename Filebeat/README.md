@@ -1,4 +1,4 @@
-# filebeat
+# Filebeat
 
 # A lightweight shipper for forwarding and centralizing log data. 
 
