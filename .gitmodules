@@ -1,0 +1,3 @@
+[submodule "newFilebeat"]
+	path = newFilebeat
+	url = git@github.com:vizionelkhelp/Filebeat.git
