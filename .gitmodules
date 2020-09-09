@@ -4,3 +4,6 @@
 [submodule "Heartbeat"]
 	path = Heartbeat
 	url = https://github.com/vizion-elk/Heartbeat.git
+[submodule "Winlogbeat"]
+	path = Winlogbeat
+	url = https://github.com/vizion-elk/Winlogbeat.git
