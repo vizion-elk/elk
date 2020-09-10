@@ -1,3 +1,9 @@
 [submodule "newFilebeat"]
 	path = newFilebeat
 	url = git@github.com:vizionelkhelp/Filebeat.git
+[submodule "Heartbeat"]
+	path = Heartbeat
+	url = https://github.com/vizion-elk/Heartbeat.git
+[submodule "Winlogbeat"]
+	path = Winlogbeat
+	url = https://github.com/vizion-elk/Winlogbeat.git
