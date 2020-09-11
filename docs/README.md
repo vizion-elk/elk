@@ -1,5 +1,7 @@
 # elk
 
+## beats create user help
+  - [7.7.0](https://vizion-elk.github.io/elk/Introduction/7.7.0/)
 ## Windows-Monitoring
   - [7.7.0](https://vizion-elk.github.io/elk/windowsMonitoring/7.7.0/)
   - [6.5.4](https://vizion-elk.github.io/elk/windowsMonitoring/6.5.4/)
