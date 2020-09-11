@@ -13,24 +13,24 @@ Elasticsearch API Endpoint: https://elastic:bgcmnduqpgax12hi@vzg6dlns1d2ofekcd1.
 Click 'Security' -> 'Roles' -> Click 'Add' icon -> Input 'Role name' such as:metricrole:
 
 1) Click 'Cluster Permission' -> Click 'Add Action Group' to select following permissions:
-    ````css
-    cluster_monitor
-    ODS_CLUSTER_MANAGE_INDEX_TEMPLATES
-    ODS_CLUSTER_MANAGE_PIPELINES
-    ````
+  ```css
+  cluster_monitor
+  ODS_CLUSTER_MANAGE_INDEX_TEMPLATES
+  ODS_CLUSTER_MANAGE_PIPELINES
+  ```
 
    Then Check the 'Show Advanced' checkbox -> Click 'Add Single Permission' button to add following permissions:
-    ```css
-    indices:data/write/index
-    indices:data/write/bulk
-    ```
+  ```css
+  indices:data/write/index
+  indices:data/write/bulk
+  ```
 2) Click 'Index Permissions' > Click 'Add Index Permissions' -> Input 'Index Pattern' as: metricbeat* -> Click 'Add Action Group' to select following permissions:
-    ```css
-    create_index
-    index
-    manage
-    read
-    ```
+  ```css
+  create_index
+  index
+  manage
+  read
+  ```
 3) Click 'Tenant permissions' tab -> Click 'Add tenant permission' button -> Input tenant pattern 'global' -> Click 'Add Field' -> Select 'kibana_all_read' and 'kibana_all_write'
 
    Then click 'Save Role Definition' to create the role
