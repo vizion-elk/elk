@@ -13,11 +13,11 @@ Elasticsearch API Endpoint: https://elastic:bgcmnduqpgax12hi@vzg6dlns1d2ofekcd1.
 Click 'Security' -> 'Roles' -> Click 'Add' icon -> Input 'Role name' such as:metricrole:
 
 1) Click 'Cluster Permission' -> Click 'Add Action Group' to select following permissions:
-    ```css
+    ````css
     cluster_monitor
     ODS_CLUSTER_MANAGE_INDEX_TEMPLATES
     ODS_CLUSTER_MANAGE_PIPELINES
-    ```
+    ````
 
    Then Check the 'Show Advanced' checkbox -> Click 'Add Single Permission' button to add following permissions:
     ```css
