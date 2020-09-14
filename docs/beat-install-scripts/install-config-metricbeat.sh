@@ -1,6 +1,11 @@
 #! /bin/bash
 echo
 echo
+KIBANA_URL=$2
+if [[ ! $KIBANA_URL ]]; then
+  echo "Kibana URL can't be empty"
+  exit 1
+fi
 echo "What type of download for your system?"
 echo "Enter (1)for Debian, (2)for rpm, (3)for mac, (4)for tar/linux"
 read DOWNLOAD_TYPE
