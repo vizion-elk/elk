@@ -9,7 +9,7 @@ From CPU to memory, Redis to NGINX, and much much more, Metricbeat is a lightwei
 1) As administrator, enter the following command in Powershell or download the zip file [here](https://github.com/vizion-elk/Metricbeat/archive/7.7.0.zip).
 
 ```
-Start-BitsTransfer -Source 'https://github.com/vizion-elk/Metricbeat/archive/7.7.0.zip' -Destination 'C:\Users\Administrator\Downloads\Metricbeat.zip'
+Start-BitsTransfer -Source "https://github.com/vizion-elk/Metricbeat/archive/7.7.0.zip" -Destination "${env:USERPROFILE}\Downloads\Metricbeat.zip"
 ```
 
 2) Unzip the package and extract the contents to the `C:/` drive.

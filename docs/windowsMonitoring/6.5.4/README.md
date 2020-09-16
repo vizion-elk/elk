@@ -66,7 +66,7 @@ Elasticsearch API Endpoint: _PLACEHOLDER_API_ENDPOINT_
    - Option B: In Powershell, as administrator, run the following request:
    
    ```css
-   Start-BitsTransfer -Source 'https://github.com/vizion-elk/Windows-Monitoring/archive/6.5.4.zip' -Destination 'C:\Users\Administrator\Downloads\windows-monitoring-6.5.4.zip'
+   Start-BitsTransfer -Source "https://github.com/vizion-elk/Windows-Monitoring/archive/6.5.4.zip" -Destination "${env:USERPROFILE}\Downloads\windows-monitoring-6.5.4.zip"
    ```
 
 2) Unzip the package and extract the contents to the `C:/` drive.

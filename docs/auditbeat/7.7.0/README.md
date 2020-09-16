@@ -31,7 +31,7 @@ Install on your servers to audit the activities of users and processes on your s
 1) As administrator, enter the following command in Powershell or download the zip file [here](https://github.com/vizion-elk/Auditbeat/archive/7.7.0.zip).
 
 ```
-Start-BitsTransfer -Source 'https://github.com/vizion-elk/Auditbeat/archive/7.7.0.zip' -Destination 'C:\Users\Administrator\Downloads\Auditbeat.zip'
+Start-BitsTransfer -Source "https://github.com/vizion-elk/Auditbeat/archive/7.7.0.zip" -Destination "${env:USERPROFILE}\Downloads\Auditbeat.zip"
 ```
 
 2) Unzip the package and extract the contents to the `C:/` drive.
@@ -62,7 +62,7 @@ This will install and run auditbeat.
 1) Enter the following script into the console using elevated privileges
 
 ```Linux
-curl https://vizion-elk.github.io/elk//beat-install-scripts/install-config-auditbeat > install-config-auditbeat.sh; chmod a+x  install-config-auditbeat.sh; ./install-config-auditbeat.sh _PLACEHOLDER_API_ENDPOINT_ _PLACEHOLDER_KIBANA_URL_
+curl https://vizion-elk.github.io/elk//beat-install-scripts/install-config-auditbeat.sh > install-config-auditbeat.sh; chmod a+x  install-config-auditbeat.sh; ./install-config-auditbeat.sh _PLACEHOLDER_API_ENDPOINT_ _PLACEHOLDER_KIBANA_URL_
 ```
 
 2) When prompted, select the proper environment to complete the installation.
