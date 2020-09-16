@@ -7,3 +7,9 @@
 [submodule "Winlogbeat"]
 	path = Winlogbeat
 	url = https://github.com/vizion-elk/Winlogbeat.git
+[submodule "vizion.ai"]
+	path = vizion.ai
+	url = https://github.com/vizion-elk/vizion.ai.git
+[submodule "Redis"]
+	path = Redis
+	url = https://github.com/vizionelkhelp/Redis.git
