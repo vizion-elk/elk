@@ -1,4 +1,3 @@
-<!-- # elk -->
 
 ## beats create user help
   - [7.7.0](https://vizion-elk.github.io/elk/Introduction/7.7.0/)
@@ -11,7 +10,6 @@
 ## Metricbeat
   - [7.7.0](https://vizion-elk.github.io/elk/metricbeat/7.7.0/)
   - [6.5.4](https://vizion-elk.github.io/elk/metricbeat/6.5.4/)
-
 ## Auditbeat
   - [7.7.0](https://vizion-elk.github.io/elk/auditbeat/7.7.0/)
   - [6.5.4](https://vizion-elk.github.io/elk/auditbeat/6.5.4/)
@@ -24,3 +22,6 @@
 ## O365beat
   - [7.7.0](https://vizion-elk.github.io/elk/o365beat/7.7.0/)
   - [6.5.4](https://vizion-elk.github.io/elk/o365beat/6.5.4/)
+## Redis
+  - [7.7.0](https://vizion-elk.github.io/elk/redis/7.7.0/)
+  - [6.5.4](https://vizion-elk.github.io/elk/redis/6.5.4/)
