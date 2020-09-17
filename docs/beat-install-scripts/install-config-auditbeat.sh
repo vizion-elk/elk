@@ -6,6 +6,16 @@ if [[ ! $KIBANA_URL ]]; then
   echo "Kibana URL can't be empty"
   exit 1
 fi
+USERNAME=$3
+if [[ ! $USERNAME ]]; then
+  echo "Username can't be empty"
+  exit 1
+fi
+PASSWORD=$4
+if [[ ! $PASSWORD ]]; then
+  echo "PASSWORD can't be empty"
+  exit 1
+fi
 echo "What type of download for your system?"
 echo "Enter (1)for Debian, (2)for rpm, (3)for mac, (4)for tar/linux"
 read DOWNLOAD_TYPE
@@ -29,22 +39,22 @@ else
   exit 1
 fi
 
-USERNAME_REGEX="https://([a-zA-Z0-9@]*):"
-PASSWORD_REGEX=":([a-zA-Z0-9]*)@"
+# USERNAME_REGEX="https://([a-zA-Z0-9@]*):"
+# PASSWORD_REGEX=":([a-zA-Z0-9]*)@"
 
-if [[ $1 =~ $USERNAME_REGEX ]]; then
-  USERNAME=${BASH_REMATCH[1]}
-else
-  echo "URL could not be parsed. Please be sure to include full URL"
-  exit 1
-fi
+# if [[ $1 =~ $USERNAME_REGEX ]]; then
+#   USERNAME=${BASH_REMATCH[1]}
+# else
+#   echo "URL could not be parsed. Please be sure to include full URL"
+#   exit 1
+# fi
 
-if [[ $1 =~ $PASSWORD_REGEX ]]; then
-  PASSWORD=${BASH_REMATCH[1]}
-else
-  echo "URL could not be parsed. Please be sure to include full URL"
-  exit 1
-fi
+# if [[ $1 =~ $PASSWORD_REGEX ]]; then
+#   PASSWORD=${BASH_REMATCH[1]}
+# else
+#   echo "URL could not be parsed. Please be sure to include full URL"
+#   exit 1
+# fi
 
 echo "###################### Auditbeat Configuration Example #########################" > /etc/auditbeat/auditbeat.yml
 echo "" >> /etc/auditbeat/auditbeat.yml

@@ -40,7 +40,7 @@ This will install and run metricbeat.
 1) Enter the following script into the console using elevated privileges
 
 ````Linux
-curl https://vizion-elk.github.io/elk//beat-install-scripts/install-config-metricbeat.sh > install-config-metricbeat.sh; chmod a+x  install-config-metricbeat.sh; ./install-config-metricbeat.sh _PLACEHOLDER_API_ENDPOINT_ _PLACEHOLDER_KIBANA_URL_
+curl https://vizion-elk.github.io/elk//beat-install-scripts/install-config-metricbeat.sh > install-config-metricbeat.sh; chmod a+x  install-config-metricbeat.sh; ./install-config-metricbeat.sh _PLACEHOLDER_API_ENDPOINT_ _PLACEHOLDER_KIBANA_URL_ _PLACEHOLDER_USERNAME_ _PLACEHOLDER_PASSWORD_
 ````
     
 2) When prompted, select the proper environment to complete the installation.
@@ -56,26 +56,4 @@ This will install and run metricbeat.
 The dashboards are provided as examples. We recommend that you customize them to meet your needs.
 
 ![Imgur](https://imgur.com/lDxTuV4.jpg)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

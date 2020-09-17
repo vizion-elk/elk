@@ -264,13 +264,13 @@ echo "setup.ilm.check_exists: false" >> /etc/filebeat/filebeat.yml
 if [[ $DOWNLOAD_TYPE -le 2 ]]; then #deb or rpm
   filebeat setup --template
   sudo filebeat setup -e
-  sudo filebeat modules enable system
+  sudo filebeat modules enable redis
   sudo service filebeat restart
 else
   cd /etc/filebeat
   ./filebeat setup --template
   sudo chown root filebeat.yml 
-  sudo chown root modules.d/system.yml 
+  sudo chown root modules.d/redis.yml 
   sudo ./filebeat setup -e
   sudo ./filebeat -e
 fi
