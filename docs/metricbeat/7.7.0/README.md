@@ -17,7 +17,7 @@ Start-BitsTransfer -Source "https://github.com/vizion-elk/Metricbeat/archive/7.7
 3) Back in Powershell, CD into the extracted folder and run the following command:
 
 ```
-Set-ExecutionPolicy -ExecutionPolicy Unrestricted
+Set-ExecutionPolicy -ExecutionPolicy Unrestricted -Force
 ```
 
 4) then run the following script:
